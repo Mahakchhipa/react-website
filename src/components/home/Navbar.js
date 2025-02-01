@@ -4,9 +4,12 @@ import logo from "../../../public/img/logo.webp";
 import { FaRedditAlien } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaSkype } from "react-icons/fa";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
+     
+      <div>
       <div className="flex h-12 w-full ">
         <div className="text-end absolute right-24 py-2 font-medium gap-3 flex ">
           <div className="gap-1 flex">
@@ -23,8 +26,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div>
-        <nav className="h-20 w-full fixed bg-sky-700  text-white ">
+        <nav className="h-20 w-full fixed px-8 bg-sky-700  text-white ">
           <div className="flex align-middle justify-evenly items-center py-2">
             <Image src={logo} height={200} width={200} alt="logo-img" />
 
@@ -44,9 +46,10 @@ const Navbar = () => {
                 Contact Us{" "}
               </li>
             </ul>
-            <button className="bg-amber-600 flex  gap-2 text-center px-4 py-2 rounded-3xl font-bold hover:bg-amber-800 animate-pulse ">
-              Request a Quote
-              <FaRedditAlien className="text-2xl" />
+            <button className="fancy flex items-center gap-1 rounded-2xl bg-[#0369a1] w-fit h-[50px] px-3  py-2 transition-transform duration-300 transform hover:bg-blue-700  animated-border">
+              <Link href="/contact-us">
+              Request a Quote  <FaRedditAlien/>
+              </Link>
             </button>
           </div>
         </nav>
