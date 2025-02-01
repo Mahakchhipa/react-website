@@ -1,9 +1,10 @@
-import Image from "next/image";
-import Navbar from './../components/home/Navbar';
-import Header from './../components/home/Header';
+import Navbar from "./../components/home/Navbar";
+import CarouselCustomArrows from "./../components/home/CarouselCustomArrows";
 export default function Home() {
-  return <>
-      <Navbar/>
-      <Header/>
-  </>;
+  return (
+    <>
+      <Navbar />
+      <CarouselCustomArrows />
+    </>
+  );
 }

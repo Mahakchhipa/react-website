@@ -46,9 +46,9 @@ const Navbar = () => {
                 Contact Us{" "}
               </li>
             </ul>
-            <button className="fancy flex items-center gap-1 rounded-2xl bg-[#0369a1] w-fit h-[50px] px-3  py-2 transition-transform duration-300 transform hover:bg-blue-700  animated-border">
+            <button className="fancy flex items-center gap-1 rounded-2xl bg-[#0369a1] w-fit h-[50px]    py-2 transition-transform duration-300 transform hover:bg-blue-700  animated-border">
               <Link href="/contact-us">
-              Request a Quote  <FaRedditAlien/>
+              Request a Quote  <FaRedditAlien className="text-2xl mx-2"/>
               </Link>
             </button>
           </div>
